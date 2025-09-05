@@ -20,7 +20,7 @@
     miniconda3
     以及若干lib依赖
 ## YOLO检测的conda环境
-    需要安装opencv，opencv-python，numpy，matplotlib，scipy，torch，torchvision，torchsummary，Pillow，scikit-image，scikit-learn，scikit-image，scikit-learn，scikit-image，scikit-learn，scikit-image，scikit-learn，scikit-image，scikit-learn，scikit-image，scikit-learn，scikit-image，scik
+    需要安装opencv，opencv-python，numpy，matplotlib，scipy，torch，torchvision，torchsummary，Pillow，scikit-image，scikit-learn
 ## 道路分割Paddleseg的conda环境
     paddleseg
 # 三、项目框架
