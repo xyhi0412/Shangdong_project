@@ -1,0 +1,7 @@
+<launch>
+  <node name="grid_map_node" pkg="eskf_navi" type="grid_map_node" output="screen">
+    <param name="topo_map_yaml_file" value="$(find eskf_navi)/config/mapping/topology_map.yaml" />
+    <param name="grid_map_yaml_file" value="$(find eskf_navi)/config/mapping/grid_map_config.yaml" />
+  </node>
+ <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find eskf_navi)/rviz/grid_map.rviz" />-->
+</launch>

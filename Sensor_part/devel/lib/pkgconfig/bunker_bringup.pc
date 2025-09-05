@@ -1,0 +1,8 @@
+prefix=/home/xiaomi1/Shandong_project/Sensor_part/devel
+
+Name: bunker_bringup
+Description: Description of bunker_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

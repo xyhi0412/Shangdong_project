@@ -1,0 +1,8 @@
+prefix=/home/xiaomi1/Shandong_project/Sensor_part/devel
+
+Name: bunker_msgs
+Description: Description of bunker_msgs
+Version: 0.3.3
+Cflags: -I/home/xiaomi1/Shandong_project/Sensor_part/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

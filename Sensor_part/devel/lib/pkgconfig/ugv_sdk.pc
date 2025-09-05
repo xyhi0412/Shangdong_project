@@ -1,0 +1,8 @@
+prefix=/home/xiaomi1/Shandong_project/Sensor_part/devel
+
+Name: ugv_sdk
+Description: Description of ugv_sdk
+Version: 0.1.6
+Cflags: -I/home/xiaomi1/Shandong_project/Sensor_part/src/ugv_sdk/include
+Libs: -L${prefix}/lib -lugv_sdk
+Requires: 

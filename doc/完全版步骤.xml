@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<root ptr="0x5587d6ac3fd0" id="0" symbol="11SwRootFrame" lower="1">
+ <sfxViewShells>
+  <SwView>
+   <SfxViewShell ptr="0x5587d6ab0660" id="0"/>
+   <SwCursorShell>
+    <SwViewShell/>
+    <m_pCurrentCursor>
+     <SwPaM>
+      <point>
+       <SwPosition nNode="47" nContent="0"/>
+      </point>
+     </SwPaM>
+    </m_pCurrentCursor>
+   </SwCursorShell>
+  </SwView>
+ </sfxViewShells>
+ <infos>
+  <bounds left="284" top="284" width="19079" height="16838" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+  <prtBounds left="0" top="0" width="19079" height="16838"/>
+ </infos>
+ <page ptr="0x5587d6ac07e0" id="1" symbol="11SwPageFrame" upper="0" lower="2">
+  <page_status ValidFlyLayout="true" ValidFlyContent="true" ValidFlyInCnt="true" ValidLayout="true" ValidContent="true"/>
+  <infos>
+   <bounds left="7457" top="284" width="11906" height="16838" mbFixSize="true" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+   <prtBounds left="1134" top="1134" width="9638" height="14570"/>
+  </infos>
+  <body ptr="0x5587d6ac5f10" id="2" symbol="11SwBodyFrame" upper="1" lower="3">
+   <infos>
+    <bounds left="8591" top="1418" width="9638" height="14570" mbFixSize="true" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+    <prtBounds left="0" top="0" width="9638" height="14570"/>
+   </infos>
+   <txt ptr="0x5587d6ac6180" id="3" symbol="11SwTextFrame" next="4" upper="2" txtNodeIndex="9" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="1418" width="9638" height="402" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="402"/>
+    </infos>
+一、打点建图    <Text nLength="6" nType="PortionType::Para" nHeight="402" nWidth="1680" Portion="&#x4E00;&#x3001;&#x6253;&#x70B9;&#x5EFA;&#x56FE;"/>
+    <LineBreak nWidth="1680" Line="&#x4E00;&#x3001;&#x6253;&#x70B9;&#x5EFA;&#x56FE;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac62f0" id="4" symbol="11SwTextFrame" next="5" prev="3" upper="2" txtNodeIndex="10" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="1820" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+        驾驶底盘到所需路径点，打开RTK（./start_rtk0.sh或者./start_rtk1.sh）监听经纬度记录。    <Text nLength="21" nType="PortionType::Text" nHeight="302" nWidth="3163" Portion="        &#x9A7E;&#x9A76;&#x5E95;&#x76D8;&#x5230;&#x6240;&#x9700;&#x8DEF;&#x5F84;&#x70B9;&#xFF0C;&#x6253;&#x5F00;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="3" nType="PortionType::Text" nHeight="276" nWidth="466" Portion="RTK"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="302" nWidth="210" Portion="&#xFF08;"/>
+    <Text nLength="15" nType="PortionType::Text" nHeight="276" nWidth="1320" Portion="./start_rtk0.sh"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="276" nWidth="48"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="302" nWidth="420" Portion="&#x6216;&#x8005;"/>
+    <Text nLength="15" nType="PortionType::Text" nHeight="276" nWidth="1320" Portion="./start_rtk1.sh"/>
+    <Text nLength="9" nType="PortionType::Text" nHeight="302" nWidth="1890" Portion="&#xFF09;&#x76D1;&#x542C;&#x7ECF;&#x7EAC;&#x5EA6;&#x8BB0;&#x5F55;&#x3002;"/>
+    <LineBreak nWidth="8879" Line="        &#x9A7E;&#x9A76;&#x5E95;&#x76D8;&#x5230;&#x6240;&#x9700;&#x8DEF;&#x5F84;&#x70B9;&#xFF0C;&#x6253;&#x5F00;RTK&#xFF08;./start_rtk0.sh&#x6216;&#x8005;./start_rtk1.sh&#xFF09;&#x76D1;&#x542C;&#x7ECF;&#x7EAC;&#x5EA6;&#x8BB0;&#x5F55;&#x3002;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac6460" id="5" symbol="11SwTextFrame" next="6" prev="4" upper="2" txtNodeIndex="11" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="2122" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+监听rtk的话题是 /fix，待信息稳定后记录经纬度，记录在：    <Text nLength="2" nType="PortionType::Text" nHeight="302" nWidth="420" Portion="&#x76D1;&#x542C;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="3" nType="PortionType::Text" nHeight="276" nWidth="267" Portion="rtk"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="276" nWidth="48"/>
+    <Text nLength="5" nType="PortionType::Text" nHeight="302" nWidth="894" Portion="&#x7684;&#x8BDD;&#x9898;&#x662F; "/>
+    <Text nLength="4" nType="PortionType::Text" nHeight="276" nWidth="333" Portion="/fix"/>
+    <Text nLength="17" nType="PortionType::Text" nHeight="302" nWidth="3570" Portion="&#xFF0C;&#x5F85;&#x4FE1;&#x606F;&#x7A33;&#x5B9A;&#x540E;&#x8BB0;&#x5F55;&#x7ECF;&#x7EAC;&#x5EA6;&#xFF0C;&#x8BB0;&#x5F55;&#x5728;&#xFF1A;"/>
+    <LineBreak nWidth="5574" Line="&#x76D1;&#x542C;rtk&#x7684;&#x8BDD;&#x9898;&#x662F; /fix&#xFF0C;&#x5F85;&#x4FE1;&#x606F;&#x7A33;&#x5B9A;&#x540E;&#x8BB0;&#x5F55;&#x7ECF;&#x7EAC;&#x5EA6;&#xFF0C;&#x8BB0;&#x5F55;&#x5728;&#xFF1A;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac65d0" id="6" symbol="11SwTextFrame" next="7" prev="5" upper="2" txtNodeIndex="12" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="2424" width="9638" height="276" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="276"/>
+    </infos>
+/Shandong_project/navi_eskf/src/eskf_navi/config/mapping/topology_map.yaml    <Text nLength="74" nType="PortionType::Para" nHeight="276" nWidth="7738" Portion="/Shandong_project/navi_eskf/src/eskf_navi/config/mapping/topology_map.yaml"/>
+    <LineBreak nWidth="7738" Line="/Shandong_project/navi_eskf/src/eskf_navi/config/mapping/topology_map.yaml"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac6740" id="7" symbol="11SwTextFrame" next="8" prev="6" upper="2" txtNodeIndex="13" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="2700" width="9638" height="276" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="276"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac68b0" id="8" symbol="11SwTextFrame" next="9" prev="7" upper="2" txtNodeIndex="14" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="2976" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- id: 0    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="120" Portion="- "/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="188" Portion="id"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="0"/>
+    <LineBreak nWidth="530" Line="- id: 0"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac6a20" id="9" symbol="11SwTextFrame" next="10" prev="8" upper="2" txtNodeIndex="15" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="3280" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+lat: 35.5734873005    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="254" Portion="lat"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="13" nType="PortionType::Text" nHeight="304" nWidth="1456" Portion="35.5734873005"/>
+    <LineBreak nWidth="1815" Line="lat: 35.5734873005"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac6b90" id="10" symbol="11SwTextFrame" next="11" prev="9" upper="2" txtNodeIndex="16" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="3584" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+lon: 116.77623818166667    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="316" Portion="lon"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="18" nType="PortionType::Text" nHeight="304" nWidth="2039" Portion="116.77623818166667"/>
+    <LineBreak nWidth="2460" Line="lon: 116.77623818166667"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac6d00" id="11" symbol="11SwTextFrame" next="12" prev="10" upper="2" txtNodeIndex="17" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="3888" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+safety_radius: 1    <Text nLength="13" nType="PortionType::Text" nHeight="304" nWidth="1311" Portion="safety_radius"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="1"/>
+    <LineBreak nWidth="1533" Line="safety_radius: 1"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac6e70" id="12" symbol="11SwTextFrame" next="13" prev="11" upper="2" txtNodeIndex="18" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="4192" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- id: 1    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="120" Portion="- "/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="188" Portion="id"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="1"/>
+    <LineBreak nWidth="530" Line="- id: 1"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac6fe0" id="13" symbol="11SwTextFrame" next="14" prev="12" upper="2" txtNodeIndex="19" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="4496" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+lat: 35.573413374666664    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="254" Portion="lat"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="18" nType="PortionType::Text" nHeight="304" nWidth="2039" Portion="35.573413374666664"/>
+    <LineBreak nWidth="2398" Line="lat: 35.573413374666664"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7150" id="14" symbol="11SwTextFrame" next="15" prev="13" upper="2" txtNodeIndex="20" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="4800" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+lon: 116.776232619    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="316" Portion="lon"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="13" nType="PortionType::Text" nHeight="304" nWidth="1456" Portion="116.776232619"/>
+    <LineBreak nWidth="1877" Line="lon: 116.776232619"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac72c0" id="15" symbol="11SwTextFrame" next="16" prev="14" upper="2" txtNodeIndex="21" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="5104" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+safety_radius: 1    <Text nLength="13" nType="PortionType::Text" nHeight="304" nWidth="1311" Portion="safety_radius"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=": "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="1"/>
+    <LineBreak nWidth="1533" Line="safety_radius: 1"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7430" id="16" symbol="11SwTextFrame" next="17" prev="15" upper="2" txtNodeIndex="22" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="5408" width="9638" height="276" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="276"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac75a0" id="17" symbol="11SwTextFrame" next="18" prev="16" upper="2" txtNodeIndex="23" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="5684" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+同样记录拓扑边    <Text nLength="7" nType="PortionType::Para" nHeight="302" nWidth="1470" Portion="&#x540C;&#x6837;&#x8BB0;&#x5F55;&#x62D3;&#x6251;&#x8FB9;"/>
+    <LineBreak nWidth="1470" Line="&#x540C;&#x6837;&#x8BB0;&#x5F55;&#x62D3;&#x6251;&#x8FB9;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7710" id="18" symbol="11SwTextFrame" next="19" prev="17" upper="2" txtNodeIndex="24" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="5986" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+edges:    <Text nLength="5" nType="PortionType::Text" nHeight="304" nWidth="576" Portion="edges"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="58" Portion=":"/>
+    <LineBreak nWidth="634" Line="edges:"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7880" id="19" symbol="11SwTextFrame" next="20" prev="18" upper="2" txtNodeIndex="25" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="6290" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [0, 1, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="0"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="1"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [0, 1, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac79f0" id="20" symbol="11SwTextFrame" next="21" prev="19" upper="2" txtNodeIndex="26" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="6594" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [1, 2, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="1"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [1, 2, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7b60" id="21" symbol="11SwTextFrame" next="22" prev="20" upper="2" txtNodeIndex="27" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="6898" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [2, 3, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="3"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [2, 3, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7cd0" id="22" symbol="11SwTextFrame" next="23" prev="21" upper="2" txtNodeIndex="28" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="7202" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [0, 4, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="0"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="4"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [0, 4, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7e40" id="23" symbol="11SwTextFrame" next="24" prev="22" upper="2" txtNodeIndex="29" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="7506" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [4, 5, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="4"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="5"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [4, 5, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac7fb0" id="24" symbol="11SwTextFrame" next="25" prev="23" upper="2" txtNodeIndex="30" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="7810" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [5, 6, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="5"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="6"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [5, 6, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac8120" id="25" symbol="11SwTextFrame" next="26" prev="24" upper="2" txtNodeIndex="31" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="8114" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [6, 7, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="6"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="7"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [6, 7, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac8290" id="26" symbol="11SwTextFrame" next="27" prev="25" upper="2" txtNodeIndex="32" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="8418" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [4, 8, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="4"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="8"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [4, 8, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac8400" id="27" symbol="11SwTextFrame" next="28" prev="26" upper="2" txtNodeIndex="33" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="8722" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [8, 9, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="8"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="9"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="823" Line="- [8, 9, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac8570" id="28" symbol="11SwTextFrame" next="31" prev="27" upper="2" txtNodeIndex="34" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="9026" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [9, 10, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="9"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="233" Portion="10"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="939" Line="- [9, 10, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac8d30" id="31" symbol="11SwTextFrame" next="32" prev="28" upper="2" txtNodeIndex="35" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="9330" width="9638" height="304" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="304"/>
+    </infos>
+- [10, 11, 2]    <Text nLength="3" nType="PortionType::Text" nHeight="304" nWidth="191" Portion="- ["/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="233" Portion="10"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="233" Portion="11"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="304" nWidth="105" Portion=", "/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="117" Portion="2"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="304" nWidth="71" Portion="]"/>
+    <LineBreak nWidth="1055" Line="- [10, 11, 2]"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac8ea0" id="32" symbol="11SwTextFrame" next="33" prev="31" upper="2" txtNodeIndex="36" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="9634" width="9638" height="276" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="630" top="0" width="9008" height="276"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac9010" id="33" symbol="11SwTextFrame" next="34" prev="32" upper="2" txtNodeIndex="37" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="9910" width="9638" height="402" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="402"/>
+    </infos>
+二、信标搭建和测试    <Text nLength="9" nType="PortionType::Para" nHeight="402" nWidth="2520" Portion="&#x4E8C;&#x3001;&#x4FE1;&#x6807;&#x642D;&#x5EFA;&#x548C;&#x6D4B;&#x8BD5;"/>
+    <LineBreak nWidth="2520" Line="&#x4E8C;&#x3001;&#x4FE1;&#x6807;&#x642D;&#x5EFA;&#x548C;&#x6D4B;&#x8BD5;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac9180" id="34" symbol="11SwTextFrame" next="35" prev="33" upper="2" txtNodeIndex="38" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="10312" width="9638" height="402" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="402"/>
+    </infos>
+三、标定信标    <Text nLength="6" nType="PortionType::Para" nHeight="402" nWidth="1680" Portion="&#x4E09;&#x3001;&#x6807;&#x5B9A;&#x4FE1;&#x6807;"/>
+    <LineBreak nWidth="1680" Line="&#x4E09;&#x3001;&#x6807;&#x5B9A;&#x4FE1;&#x6807;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac92f0" id="35" symbol="11SwTextFrame" next="36" prev="34" upper="2" txtNodeIndex="39" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="10714" width="9638" height="402" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="402"/>
+    </infos>
+四、启动测试    <Text nLength="6" nType="PortionType::Para" nHeight="402" nWidth="1680" Portion="&#x56DB;&#x3001;&#x542F;&#x52A8;&#x6D4B;&#x8BD5;"/>
+    <LineBreak nWidth="1680" Line="&#x56DB;&#x3001;&#x542F;&#x52A8;&#x6D4B;&#x8BD5;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac9460" id="36" symbol="11SwTextFrame" next="37" prev="35" upper="2" txtNodeIndex="40" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="11116" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+        为了便于启动我们写了一系列脚本，具体如下：    <Text nLength="29" nType="PortionType::Para" nHeight="302" nWidth="4843" Portion="        &#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x542F;&#x52A8;&#x6211;&#x4EEC;&#x5199;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x811A;&#x672C;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#xFF1A;"/>
+    <LineBreak nWidth="4843" Line="        &#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x542F;&#x52A8;&#x6211;&#x4EEC;&#x5199;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x811A;&#x672C;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#xFF1A;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac95d0" id="37" symbol="11SwTextFrame" next="38" prev="36" upper="2" txtNodeIndex="41" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="11418" width="9638" height="345" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="345"/>
+    </infos>
+4.1bunker底盘    <Text nLength="9" nType="PortionType::Text" nHeight="276" nWidth="967" Portion="4.1bunker"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="276" nWidth="48"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="345" nWidth="480" Portion="&#x5E95;&#x76D8;"/>
+    <LineBreak nWidth="1495" Line="4.1bunker&#x5E95;&#x76D8;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac9740" id="38" symbol="11SwTextFrame" next="39" prev="37" upper="2" txtNodeIndex="42" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="11763" width="9638" height="604" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="604"/>
+    </infos>
+通过cantoUSB连接，被主机识别为can口，start_bunker.sh是带避障的模式，必须启动yolo.sh，yolo发布/cmd_vel_safe。    <Text nLength="2" nType="PortionType::Text" nHeight="302" nWidth="420" Portion="&#x901A;&#x8FC7;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="8" nType="PortionType::Text" nHeight="242" nWidth="863" Portion="cantoUSB"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="9" nType="PortionType::Text" nHeight="302" nWidth="1890" Portion="&#x8FDE;&#x63A5;&#xFF0C;&#x88AB;&#x4E3B;&#x673A;&#x8BC6;&#x522B;&#x4E3A;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="3" nType="PortionType::Text" nHeight="242" nWidth="291" Portion="can"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="302" nWidth="420" Portion="&#x53E3;&#xFF0C;"/>
+    <Text nLength="15" nType="PortionType::Text" nHeight="242" nWidth="1277" Portion="start_bunker.sh"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="12" nType="PortionType::Text" nHeight="302" nWidth="2520" Portion="&#x662F;&#x5E26;&#x907F;&#x969C;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x5FC5;&#x987B;&#x542F;&#x52A8;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="7" nType="PortionType::Text" nHeight="242" nWidth="613" Portion="yolo.sh"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="302" nWidth="210" Portion="&#xFF0C;"/>
+    <Text nLength="4" nType="PortionType::Text" nHeight="242" nWidth="373" Portion="yolo"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="302" nWidth="420" Portion="&#x53D1;&#x5E03;"/>
+    <LineBreak nWidth="9591" Line="&#x901A;&#x8FC7;cantoUSB&#x8FDE;&#x63A5;&#xFF0C;&#x88AB;&#x4E3B;&#x673A;&#x8BC6;&#x522B;&#x4E3A;can&#x53E3;&#xFF0C;start_bunker.sh&#x662F;&#x5E26;&#x907F;&#x969C;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x5FC5;&#x987B;&#x542F;&#x52A8;yolo.sh&#xFF0C;yolo&#x53D1;&#x5E03;"/>
+    <Text nLength="13" nType="PortionType::Text" nHeight="242" nWidth="1224" Portion="/cmd_vel_safe"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="302" nWidth="210" Portion="&#x3002;"/>
+    <LineBreak nWidth="1434" Line="/cmd_vel_safe&#x3002;"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac98b0" id="39" symbol="11SwTextFrame" next="40" prev="38" upper="2" txtNodeIndex="43" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="12367" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+ start_bunker_novis.sh是无避障，不需要启动Yolo.sh，小车接受/cmd_vel    <Text nLength="1" nType="PortionType::Text" nHeight="302" nWidth="54" Portion=" "/>
+    <Text nLength="21" nType="PortionType::Text" nHeight="242" nWidth="1849" Portion="start_bunker_novis.sh"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="10" nType="PortionType::Text" nHeight="302" nWidth="2100" Portion="&#x662F;&#x65E0;&#x907F;&#x969C;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x542F;&#x52A8;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="7" nType="PortionType::Text" nHeight="242" nWidth="638" Portion="Yolo.sh"/>
+    <Text nLength="5" nType="PortionType::Text" nHeight="302" nWidth="1050" Portion="&#xFF0C;&#x5C0F;&#x8F66;&#x63A5;&#x53D7;"/>
+    <Text nLength="8" nType="PortionType::Text" nHeight="242" nWidth="781" Portion="/cmd_vel"/>
+    <LineBreak nWidth="6556" Line=" start_bunker_novis.sh&#x662F;&#x65E0;&#x907F;&#x969C;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x542F;&#x52A8;Yolo.sh&#xFF0C;&#x5C0F;&#x8F66;&#x63A5;&#x53D7;/cmd_vel"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac9a20" id="40" symbol="11SwTextFrame" next="42" prev="39" upper="2" txtNodeIndex="44" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="12669" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+点击启动或者在此路径的命令行 ./start_bunker_novis.sh    <Text nLength="15" nType="PortionType::Text" nHeight="302" nWidth="2994" Portion="&#x70B9;&#x51FB;&#x542F;&#x52A8;&#x6216;&#x8005;&#x5728;&#x6B64;&#x8DEF;&#x5F84;&#x7684;&#x547D;&#x4EE4;&#x884C; "/>
+    <Text nLength="23" nType="PortionType::Text" nHeight="242" nWidth="1960" Portion="./start_bunker_novis.sh"/>
+    <LineBreak nWidth="4954" Line="&#x70B9;&#x51FB;&#x542F;&#x52A8;&#x6216;&#x8005;&#x5728;&#x6B64;&#x8DEF;&#x5F84;&#x7684;&#x547D;&#x4EE4;&#x884C; ./start_bunker_novis.sh"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ae76d0" id="42" symbol="11SwTextFrame" next="44" prev="40" upper="2" txtNodeIndex="45" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="12971" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+4.2&amp;4.3 imu和RTK    <Text nLength="11" nType="PortionType::Text" nHeight="242" nWidth="1068" Portion="4.2&amp;4.3 imu"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="302" nWidth="210" Portion="&#x548C;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="3" nType="PortionType::Text" nHeight="242" nWidth="408" Portion="RTK"/>
+    <LineBreak nWidth="1770" Line="4.2&amp;4.3 imu&#x548C;RTK"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d88e8690" id="44" symbol="11SwTextFrame" next="45" prev="42" upper="2" txtNodeIndex="46" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="13273" width="9638" height="302" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="302"/>
+    </infos>
+IMU和RTK的端口总是互换，和插入顺序有关。分别是/dev/ttyUSB1和/dev/ttyUSB0。     <Text nLength="3" nType="PortionType::Text" nHeight="242" nWidth="408" Portion="IMU"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="302" nWidth="210" Portion="&#x548C;"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="302" nWidth="42"/>
+    <Text nLength="3" nType="PortionType::Text" nHeight="242" nWidth="408" Portion="RTK"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="19" nType="PortionType::Text" nHeight="302" nWidth="3990" Portion="&#x7684;&#x7AEF;&#x53E3;&#x603B;&#x662F;&#x4E92;&#x6362;&#xFF0C;&#x548C;&#x63D2;&#x5165;&#x987A;&#x5E8F;&#x6709;&#x5173;&#x3002;&#x5206;&#x522B;&#x662F;"/>
+    <Text nLength="12" nType="PortionType::Text" nHeight="242" nWidth="1155" Portion="/dev/ttyUSB1"/>
+    <Special nLength="0" nType="PortionType::Kern" rText="" nHeight="242" nWidth="42"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="302" nWidth="210" Portion="&#x548C;"/>
+    <Text nLength="12" nType="PortionType::Text" nHeight="242" nWidth="1155" Portion="/dev/ttyUSB0"/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="302" nWidth="264" Portion="&#x3002; "/>
+    <LineBreak nWidth="7968" Line="IMU&#x548C;RTK&#x7684;&#x7AEF;&#x53E3;&#x603B;&#x662F;&#x4E92;&#x6362;&#xFF0C;&#x548C;&#x63D2;&#x5165;&#x987A;&#x5E8F;&#x6709;&#x5173;&#x3002;&#x5206;&#x522B;&#x662F;/dev/ttyUSB1&#x548C;/dev/ttyUSB0&#x3002; "/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d393be30" id="45" symbol="11SwTextFrame" next="41" prev="44" upper="2" txtNodeIndex="47" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="13575" width="9638" height="242" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="242"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x5587d6ac9b90" id="41" symbol="11SwTextFrame" prev="45" upper="2" txtNodeIndex="48" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8591" top="13817" width="9638" height="322" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="322"/>
+    </infos>
+    <Finish/>
+   </txt>
+  </body>
+ </page>
+</root>

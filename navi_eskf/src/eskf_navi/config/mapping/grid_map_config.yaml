@@ -1,0 +1,7 @@
+# 栅格地图生成器配置
+grid_map:
+  resolution: 0.01            # 地图分辨率(米/像素)
+  safety_radius_multiplier: 1.0  # 安全半径乘数（用于障碍物区域）
+  extent: 1.0         # 自由空间缓冲区大小（扩展地图边界的大小）
+  update_frequency: 1.0          # 地图更新频率（Hz）
+  topic_name: /grid_map  # 输出的话题名称

@@ -1,0 +1,2 @@
+eskf_navi
+-DCATKIN_DEVEL_PREFIX=/home/xiaomi1/Shandong_project/navi_eskf/devel -DCMAKE_INSTALL_PREFIX=/home/xiaomi1/Shandong_project/navi_eskf/install -G Unix Makefiles

@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/xiaomi1/Shandong_project/Sensor_part/devel/lib/libbunker_messenger.a  CMakeFiles/bunker_messenger.dir/src/bunker_messenger.cpp.o
+/usr/bin/ranlib /home/xiaomi1/Shandong_project/Sensor_part/devel/lib/libbunker_messenger.a

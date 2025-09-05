@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="road_seg" type="run_paddle_node.sh" name="paddleseg_infer" output="screen">
+        <param name="image_topic" value="/camera/left/image_raw"/>
+    </node>
+</launch>
+

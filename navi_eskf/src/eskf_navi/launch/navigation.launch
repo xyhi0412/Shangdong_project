@@ -1,0 +1,19 @@
+<launch>
+  <node name="navigation_node" pkg="eskf_navi" type="navigation_node" output="screen">
+    <param name="topo_map_yaml_file" value="$(find eskf_navi)/config/mapping/topology_map.yaml" />
+    <param name="grid_map_yaml_file" value="$(find eskf_navi)/config/mapping/grid_map_config.yaml" />
+    <param name="following_distance" value="1.0"/>
+    <param name="start_following" value="false"/>
+
+
+
+    <param name="RTK_manual_offset" value="false"/>
+    <param name="RTK_offset_latitude" value="35.57349512983333"/> 
+    <param name="RTK_offset_longitude" value="116.77623968683334"/>
+    <!-- 这里填本次实验时，把车子停在原点，rtk收到的经纬度坐标 -->
+    <!-- true代表手动校正，false代表不校正 -->
+
+
+  </node>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find eskf_navi)/rviz/navigation.rviz" />
+</launch>

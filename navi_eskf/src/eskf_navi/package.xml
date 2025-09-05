@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>eskf_navi</name>
+  <version>0.1.0</version>
+  <description>RTK-IMU fusion based on ESKF for localization and navigation</description>
+  
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>Apache 2.0</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>visualization_msgs</depend>
+  <depend>geographic_msgs</depend>
+  
+  <build_depend>eigen</build_depend>
+  <build_depend>geographiclib</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <build_depend>message_generation</build_depend>
+  
+  <exec_depend>eigen</exec_depend>
+  <exec_depend>geographiclib</exec_depend>
+  <exec_depend>yaml-cpp</exec_depend>
+</package>

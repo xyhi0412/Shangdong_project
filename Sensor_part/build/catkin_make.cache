@@ -1,0 +1,2 @@
+OrbbecSDK_ROS1:bunker_ros/bunker_base:bunker_ros/bunker_bringup:bunker_ros/bunker_msgs:ugv_sdk:yesense
+-DCATKIN_DEVEL_PREFIX=/home/xiaomi1/Shandong_project/Sensor_part/devel -DCMAKE_INSTALL_PREFIX=/home/xiaomi1/Shandong_project/Sensor_part/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/xiaomi1/Shandong_project/Sensor_part/devel
+
+Name: bunker_base
+Description: Description of bunker_base
+Version: 0.3.3
+Cflags: -I/home/xiaomi1/Shandong_project/Sensor_part/src/bunker_ros/bunker_base/include
+Libs: -L${prefix}/lib -lbunker_messenger
+Requires: ugv_sdk bunker_msgs

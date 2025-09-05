@@ -1,0 +1,8 @@
+prefix=/home/xiaomi1/Shandong_project/Visual_part/devel
+
+Name: ransac_ground_segmentation
+Description: Description of ransac_ground_segmentation
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

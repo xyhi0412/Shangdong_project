@@ -1,0 +1,14 @@
+<launch>
+
+  <node pkg="yesense_imu" type="yesense_imu_node" name="yesense_imu_node"  output = "screen" >
+    <param name="yesense_port"      type="string" value="/dev/ttyUSB0"/>
+    <param name="yesense_baudrate"  type="int"    value="460800"/>    
+  </node>
+  <!-- Static transform from base_link to imu_link -->
+  <!-- args: x y z yaw pitch roll frame_id child_frame_id period(milliseconds) -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_imu" 
+        args="0.0 0.0 0.2 0 0 0 base_link imu_link" />
+
+
+
+</launch>

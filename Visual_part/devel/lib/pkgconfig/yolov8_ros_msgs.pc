@@ -1,0 +1,8 @@
+prefix=/home/xiaomi1/Shandong_project/Visual_part/devel
+
+Name: yolov8_ros_msgs
+Description: Description of yolov8_ros_msgs
+Version: 1.0.0
+Cflags: -I/home/xiaomi1/Shandong_project/Visual_part/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

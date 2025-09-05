@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="roi" type="left_image_saver.py" name="left_image_saver" output="screen"/>
+</launch>

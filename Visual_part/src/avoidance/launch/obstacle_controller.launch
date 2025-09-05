@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="obstacle_controller"
+          type="obstacle_controller.py"
+          name="obstacle_controller"
+          output="screen" />
+</launch>
+

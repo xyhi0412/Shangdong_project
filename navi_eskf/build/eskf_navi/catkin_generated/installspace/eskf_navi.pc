@@ -1,0 +1,8 @@
+prefix=/home/xiaomi1/Shandong_project/navi_eskf/install
+
+Name: eskf_navi
+Description: Description of eskf_navi
+Version: 0.1.0
+Cflags: -I${prefix}/include -I/usr/include
+Libs: -L${prefix}/lib /usr/lib/x86_64-linux-gnu/libGeographic.so
+Requires: roscpp std_msgs tf2_ros

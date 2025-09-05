@@ -1,0 +1,2 @@
+set(bunker_msgs_MESSAGE_FILES "/home/xiaomi1/Shandong_project/Sensor_part/src/bunker_ros/bunker_msgs/msg/BunkerStatus.msg;/home/xiaomi1/Shandong_project/Sensor_part/src/bunker_ros/bunker_msgs/msg/BunkerMotorState.msg;/home/xiaomi1/Shandong_project/Sensor_part/src/bunker_ros/bunker_msgs/msg/BunkerRsStatus.msg;/home/xiaomi1/Shandong_project/Sensor_part/src/bunker_ros/bunker_msgs/msg/BunkerBmsStatus.msg")
+set(bunker_msgs_SERVICE_FILES "")

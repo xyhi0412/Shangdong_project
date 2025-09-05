@@ -1,0 +1,4 @@
+<launch>
+    <!-- 启动 roi 节点 -->
+    <node pkg="roi" type="roi_node.py" name="depth_roi_node" output="screen"/>
+</launch>

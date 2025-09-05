@@ -1,0 +1,26 @@
+# 测试coordinate_converter使用，测试时请将对应cpp文件中的main函数取消注释，执行文件直接去找build里的coordinate_converter_test
+cmake_minimum_required(VERSION 3.0)
+project(coordinate_converter_test)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+)
+
+list(APPEND CMAKE_MODULE_PATH "/usr/share/cmake/geographiclib")
+
+find_package(GeographicLib REQUIRED)
+
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+  ${GeographicLib_INCLUDE_DIRS}
+  ${PROJECT_SOURCE_DIR}/include
+)
+
+add_executable(coordinate_converter_test src/coordinate_converter.cpp)
+
+target_link_libraries(coordinate_converter_test
+  ${catkin_LIBRARIES}
+  ${GeographicLib_LIBRARIES}
+)
