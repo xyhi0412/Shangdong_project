@@ -250,7 +250,7 @@ void NavigationNode::marvelCallback(const eskf_navi::hedge_pos_a::ConstPtr& msg)
     if (isCalibrated()) {
         double enu_x, enu_y;
         calibration_.marvelToENU(marvel_x_, marvel_y_, enu_x, enu_y);
-        ROS_INFO("[marvel_callback]Converted to ENU: x: %f, y: %f", enu_x, enu_y);
+        //ROS_INFO("[marvel_callback]Converted to ENU: x: %f, y: %f", enu_x, enu_y);
         marvel_pose_.pose.position.x = enu_x;
         marvel_pose_.pose.position.y = enu_y;
         marvel_pose_.pose.position.z = 0;

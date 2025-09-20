@@ -1,0 +1,135 @@
+底盘说明
+	bunker和scout的使用基本一致
+	(1)下载对应的sdk文件 github
+	(2)连接can口，此时遥控器的b要拨到最上面。$ sudo modprobe gs_usb
+						$ sudo ip link set can0 up type can bitrate 500000 //默认都是500000，输完这条指令，正常can 上					//上面会亮起3个红灯，其中的rx是交替闪烁（scout），bunker一样
+						//注意接线，scout上面蓝线是canl，黄线是canh
+						//bunker 也是一样的接线,如果3个红灯长亮，则是异常，bunker建议把车关机重启来解决。
+						//所以不太建议使用逆变器，而用一个独立的电池给工控充电。
+						$ ifconfig -a 
+						$ sudo apt install can-utils
+						$ candump can0 //输入完这条指令，正常能看到输出的数据，就没有问题了
+						
+	(3)launch启动底盘驱动的文件，成功启动之后，会有日至输出的提示。
+	scout是这样的
+	[INFO] [1755689626.598352724]: Working as scout mini: 1
+	[INFO] [1755689626.598907542]: Working as scout omni: 0
+	Start listening to port: can0
+	Detected protocol: AGX_V2
+	Start listening to port: can0
+	[INFO] [1755689626.658551651]: Using CAN bus to talk with the robot
+	terminate called after throwing an instance of 'std::system_error'
+	  what():  Resource deadlock avoided
+	  
+	 bunker的launch文件要做修改，将bunker_robot_base.launch中的mini那行改成true
+	 			     将bunker_base.launch中的remap后面的smooth改成/cmd_vel这样就不用改话题了，就是使用默认的cmd_vel 
+
+	(4)启动导航的文件包，3个launch文件即可，rostopic list查看所有的消息
+
+	(5)rostpic pub -r 10 /cmd_vel 发布速度消息，小车能动，就代表测试成功。	
+	
+	
+imu说明
+	(1)sudo chmod 666 /dev/ttyUSB0,给usb口访问的权限,为了避免与r60冲突，改launch文件为usb1
+
+	(2)roslaunch yesense_imu run_without_rviz.launch 启动这个节点，静态坐标变换已经添加，具体数值可根据实际情况调整
+
+	
+	
+335L相机说明(可以参照以前写的那版说明)
+	(1)dmesg | grep -i usb，查看相机的端口号，在multi的那个launch文件中修改
+	(2)同样是在这个文件中，修改num数量为要用的数量，并添加静态坐标变换，具体数值根据装车的位置决定
+	(3) roslaunch orbbec_camera multi_camera.launch 启动文件
+
+	(4)在导航文件对应的yolo文件启动前要先进入scripts文件目录，然后$ chmod +x  (py文件名)yolo_3d_bbox.py yolo_obstacle.py yolo_v8.py 
+		xiaomi1@xiaomi1-XM22AL5S:~/navi_eskf/src/yolov8_ros/src/Yolov8_ros/yolov8_ros/scripts$ chmod +x yolo_3d_bbox.py 
+		xiaomi1@xiaomi1-XM22AL5S:~/navi_eskf/src/yolov8_ros/src/Yolov8_ros/yolov8_ros/scripts$ chmod +x yolo_obstacle.py 
+	(5)注意修改对应的py文件的相机的topic名称
+	
+	
+	
+	
+	
+		
+	
+R60说明
+	(1)接一个充电线，用电池充电，接一个com口的线，要有转接口，接到工控。
+	(2)cutecom指令，查看usb口，默认是0口
+	(3)使用命令从串口读取nmea格式的GPS字符段并发布话题/nmea_sentence（/nmea_msgs/Sentence格式）：
+
+		rosrun nmea_navsat_driver nmea_topic_serial_reader _port:=/dev/ttyUSB0 _baud:=115200 //报警告不要紧
+
+		使用nmea_navsat_driver驱动中的节点接收话题/nmea_sentence（/nmea_msgs/Sentence格式）并发布/fix话题（/NavSatFix格式）：
+
+		rosrun nmea_navsat_driver nmea_topic_driver //报警告不要紧。
+	(4)然后rostopic echo /fix 到室外查看有没有数据 或者rostopic echo /nmea_sentence 正常到室外就有数据了
+
+	
+
+
+导航模块最后启动--->共2个launch文件
+
+
+
+
+
+
+
+marvelmind的启动说明
+	sudo chmod 777 /dev/ttyACM0 
+
+	rosrun marvelmind_nav hedge_rcv_bin /dev/ttyACM0 115200
+	
+	[INFO] [1756375673.176079253]: Address: 136, timestamp: 719640, 425, X=12.298  Y= -3.963  Z=0.000  Angle: 0.0  flags=2
+[INFO] [1756375673.609428593]: Address: 136, timestamp: 720073, 433, X=6.651  Y= -3.189  Z=0.000  Angle: 0.0  flags=3
+[INFO] [1756375674.033627741]: Address: 136, timestamp: 720497, 424, X=12.742  Y= -3.971  Z=0.000  Angle: 0.0  flags=2
+[INFO] [1756375674.466794025]: Address: 136, timestamp: 720930, 433, X=12.534  Y= -3.984  Z=0.000  Angle: 0.0  flags=2
+^C^C^Cstopping
+
+	
+	
+	
+	xiaomi1@xiaomi1-XM22AL5S:~/indoor_gps$ rosrun marvel_nav_repub marvel_nav_repub_node
+	
+: x: 12.298000, y: -3.963000, z: 0.000000.
+[INFO] [1756375673.610048644]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 6.651000, y: -3.189000, z: 0.000000.
+[INFO] [1756375674.033940111]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 12.742000, y: -3.971000, z: 0.000000.
+[INFO] [1756375674.466951030]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 12.534000, y: -3.984000, z: 0.000000.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+[INFO] [1756541617.518423433]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 15.486000, y: -14.610000, z: 0.000000.
+[INFO] [1756541618.293624568]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 15.486000, y: -14.610000, z: 0.000000.
+[WARN] [1756541618.886813417]: Point (15.486000, -14.610000) is out of bounds of the grid map.
+[WARN] [1756541618.886876185]: Target position (15.486000, -14.610000) is not safe, skipping follow update
+[INFO] [1756541619.052685540]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 15.486000, y: -14.610000, z: 0.000000.
+[INFO] [1756541619.810576568]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 15.486000, y: -14.610000, z: 0.000000.
+[INFO] [1756541620.569054503]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 15.486000, y: -14.610000, z: 0.000000.
+[WARN] [1756541620.886813209]: Point (15.486000, -14.610000) is out of bounds of the grid map.
+[WARN] [1756541620.886888912]: Target position (15.486000, -14.610000) is not safe, skipping follow update
+[INFO] [1756541621.344124027]: [marvel_callback]Hedge info recieved. Hedge_pos_a: x: 15.486000, y: -14.610000, z: 0.000000.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+				

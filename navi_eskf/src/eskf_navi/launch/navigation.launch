@@ -3,7 +3,7 @@
     <param name="topo_map_yaml_file" value="$(find eskf_navi)/config/mapping/topology_map.yaml" />
     <param name="grid_map_yaml_file" value="$(find eskf_navi)/config/mapping/grid_map_config.yaml" />
     <param name="following_distance" value="1.0"/>
-    <param name="start_following" value="false"/>
+    <param name="start_following" value="true"/>
 
 
 
